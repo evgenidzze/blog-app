@@ -6,4 +6,7 @@
         <p>{{ detail_post.body }}</p>
         <p>Author: {{ detail_post.author }}</p>
     </div>
+
+    <a href="{% url 'post_edit' detail_post.pk %}">+ Edit Blog Post</a><br>
+    <a href="{% url 'post_delete' detail_post.pk %}">+ Delete Blog Post</a>
 {% endblock content %}
